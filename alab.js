@@ -42,9 +42,9 @@ for (let i = 1; i < arr.length; i++) {
     const row = arr[i].split(',');
     let obj = {};
 
-    header.forEach((key, index) => { //Assing value to object
-        obj[key] = row[index];
-    });
+    for (let z = 0; z < header.length; z++) {
+        obj[header[z]] = row[z];
+    }
 
     dataArray.push(obj);
 }
